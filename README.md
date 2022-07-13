@@ -43,6 +43,14 @@ git clone https://github.com/airsplay/py-bottom-up-attention.git && cd py-bottom
 ### 商品主图主体特征抽取
 ```shell script
 python bp_feature/extract_feature_unit.py \
+       --input_file '../item_valid_info.jsonl' \ 
+       --local_image_path '../item_valid_images/item_valid_images' \
+       --output_file './testv1/item_valid_image_feature.csv'  \
+       --save_model_path './bp_feature/faster_rcnn_from_caffe_attr.pkl' 
+   ```    
+       
+```shell script
+python bp_feature/extract_feature_unit.py \
        --input_file '../item_valid_info.jsonl' \ # 验证集商品信息
        --local_image_path '../item_valid_images/item_valid_images' \
        --output_file './testv1/item_valid_image_feature.csv'  \
