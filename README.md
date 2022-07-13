@@ -22,6 +22,9 @@ Capture商品多模态表征提取主要分为三个步骤：step0:预训练 ste
 [bottom-up attention with detectron2](https://github.com/airsplay/py-bottom-up-attention)
 ### 环境安装
 detectron2 需要torch=1.4版本，建议conda配置专门环境跑
+```
+git clone https://github.com/airsplay/py-bottom-up-attention.git && cd py-bottom-up-attention && pip install -r requirements.txt && pip install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI' && python setup.py build develop
+```
 ```shell script
     git clone https://github.com/airsplay/py-bottom-up-attention.git
     cd py-bottom-up-attention
